@@ -4,49 +4,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey’s</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <!-- tailwind with daisy -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- tailwind custom classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'get-ticket': '#FF4240',
+              'social-icons': 'rgba(19, 19, 24, 0.03)',
+              'footer-back': '#131318',
+              'footer-text': '#FFF',
+            }
+          }
+        }
+      }
+    </script>
 </head>
-<body>
+<body class="font">
     <header>
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 w-5/6 lg:mt-[20px] mt-[10px] justify-center mx-[auto]">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
+                      <li><a></a></li>
                       <li><a>About</a></li>
                       <li><a>Pages</a></li>
                       <li><a>Blog</a></li>
                       <li><a>Contact</a></li>
+                      <!-- <li><i class="fa-solid fa-magnifying-glass"></i></li> -->
+                      <li><a><img class="search" src="Images/search.png" alt="search"></a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">Hockey’s</a>
+                  <a class="btn btn-ghost text-2xl lg:text-4xl">Hockey&rsquo;s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                    <li><a><span class="text-rose-400">Home</span></a></li>
                     <li><a>About</a></li>
                     <li><a>Pages</a></li>
                     <li><a>Blog</a></li>
                     <li><a>Contact</a></li>
+                    <!-- <li><i class="fa-solid fa-magnifying-glass"></i></li> -->
+                    <li><a><img class="search" src="Images/search.png" alt="search"></a></li>
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn">Get Ticket</a>
+                  <button class="btn btn-secondary bg-get-ticket">Get Ticket</button>
                 </div>
               </div>
         </nav>
+        <!-- slider or carousal -->
+        <div class="carousel w-5/6 lg:h-[500px] lg:mt-[30px] lg:ml-[115px] mt-[20px] ml-[35px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full h-full rounded-xl" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full rounded-xl">
+            <img src="Images/360V.jpg" class="w-full rounded-xl" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+        </div>
     </header>
     <main>
-
+      <div class="club w-2/3 justify-center mx-[auto] mb-[100px]">
+        <h3 class="font-bold text-2xl lg:text-4xl p-3 lg:p-10 w-full text-center justify-center mt-[50px] mx-[auto]">Professional Hockeys Club</h3>
+        <p class="font-light text-sm lg:text-base w-full text-center mt-[10px] mx-[auto] ">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play. Professional competition began in North America in the United States—in Pennsylvania and Michigan—and in Canada around 1900. </p>
+      </div>
+      <div class="w-2/3 justify-center mx-[auto] text-center">
+      <div class="progress flex flex-col lg:flex-row lg:w-full lg:h-[350px] w-full h-[800px]  gap-x-8 justify-around lg:p-[10px] bg-inherit">
+        <div class="prayer">
+          <div class="radial-progress text-primary" style="--value:87;" role="progressbar">87%</div>
+        <h5 class="club-progress text-2xl text-lg font-bold ">Prayer Facility</h5>
+        <p>The Multi-Faith Space is to be used for prayer/meditation and religious observances and not as a lounge, study room, meeting room or for other purposes.</p>
+        </div>
+        <div class="coch">
+          <div class="radial-progress text-primary" style="--value:95;" role="progressbar">95%</div>
+          <h5 class="text-2xl text-lg font-bold ">Experienced Coach</h5>
+          <p>Fulfilling the duties and responsibilities of a hockey coach requires attention to detail, leadership skills, and extensive knowledge of coaching techniques.</p>
+        </div>
+         <div class="player">
+          <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
+          <h5 class="text-2xl text-lg font-bold ">Senior Player</h5>
+          <p>Senior hockey refers to amateur or semi-professional ice hockey competition. There are no age restrictions for Senior players</p>
+         </div>
+         <div class="ground">
+          <div class="radial-progress text-primary" style="--value:80;" role="progressbar">80%</div>
+          <h5 class="text-2xl text-lg font-bold ">Training Ground</h5>
+          <p>My Training Surface those tiles allow you to create your rink and it is the ultimate training ground for developing soft hands and becoming an experienced</p>
+         </div>
+        </div>
+      </div>
+      <div class="program w-2/3 justify-center mx-[auto] mb-[50px] lg:mb-[100px]">
+        <h3 class="font-bold text-2xl lg:text-4xl p-3 lg:p-10 w-full text-center justify-center mt-[50px] mx-[auto]">Program Sections</h3>
+        <p class="font-light text-sm lg:text-base w-full text-center mt-[10px] mx-[auto] ">Hockey is an intense and physically demanding sport. The players need to maintain a high level of speed, agility, and endurance throughout the game. By splitting the game into three periods, players are given an opportunity to rest and recover between each period. </p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-4 w-5/6 justify-center mx-[auto]">
+        <div class="">
+          <div class="card w-full bg-base-100 shadow-xl image-full">
+            <figure><img src="Images/2.png" alt="Shoes" class="w-full"/></figure>
+            <div class="card-body">
+              <h2 class="card-title">Junior Program</h2>
+              <p class="w-3/5">USA Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their skills.</p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-primary bg-get-ticket border-get-ticket">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="...">
+          <div class="card w-full bg-base-100 shadow-xl image-full">
+            <figure><img src="Images/3.png" alt="Shoes" class="w-full" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Teenager Program</h2>
+              <p class="w-3/5">Your local youth instructors are able to teach the skills of ice hockey in a fun, engaging manner.</p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-primary bg-get-ticket border-get-ticket">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="card w-full bg-base-100 shadow-xl image-full">
+            <figure><img src="Images/4.png" alt="Shoes" class="w-full" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Professional Program</h2>
+              <p class="w-4/5">T Professional athletes in hockey play for professional teams. They play hockey games in front of audiences and compete against other teams in their league. To prepare for games.</p>
+              <div class="card-actions justify-start">
+                <button class="btn btn-primary bg-get-ticket border-get-ticket">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="program w-2/3 justify-center mx-[auto] mb-[50px] lg:mb-[100px]">
+        <h3 class="font-bold text-2xl lg:text-4xl p-3 lg:p-10 w-full text-center justify-center mt-[50px] mx-[auto]">Our New Products</h3>
+        <p class="font-light text-sm lg:text-base w-full text-center mt-[10px] mx-[auto] ">Product introduction is the marketing tactic used to increase sales by advertising a product before it's released. A company's sales or marketing division is usually in charge of this process that begins when a product has finished testing or been authorized for sales. </p>
+      </div>
+      <div class="program w-2/3 justify-center mx-[auto] mb-[50px] lg:mb-[100px]">
+        <h3 class="font-bold text-2xl lg:text-4xl p-3 lg:p-10 w-full text-center justify-center mt-[50px] mx-[auto]">Clients Question</h3>
+        <p class="font-light text-sm lg:text-base w-full text-center mt-[10px] mx-[auto] ">Here are the top 5 questions you'd ask your customers · What can my company do to better serve your needs. </p>
+      </div>
+      <div class="question flex flex-col lg:flex-row w-5/6 justify-between gap-[30px] mx-[auto] lg:border lg:rounded-xl lg:p-[20px]">
+        <div class="ques-img">
+          <img src="Images/11.png" alt="">
+        </div> 
+        <div class="client">
+        <div class="ques flex flex-row">
+          <div class="equipment">
+            <h6 class="text-xl font-Manrope mb-[5px]">Our Equipment</h6>
+            <p class="latter mb-[15px]">Discover a complete range of innovative fluid distribution equipment designed to meet the needs of the electronics industry, laboratories.</p>
+          </div>
+          <div class="h font-black text-4xl">-</div>  
+          </div>
+          <hr>
+            <div class="train flex flex-row justify-between">
+              <h6 class="text-xl font-Manrope mb-[5px] mt-[10px]">Hockey Training</h6>
+              <div class="h font-black text-4xl mb-[5px] mt-[10px]">+</div>
+            </div>
+            <hr>
+            <div class="train flex flex-row justify-between">
+              <h6 class="text-xl font-Manrope mb-[5px] mt-[10px]">Private Lessons</h6>
+              <div class="h font-black text-4xl mb-[5px] mt-[10px]">+</div>
+            </div>
+            <hr>
+            <div class="train flex flex-row justify-between">
+              <h6 class="text-xl font-Manrope mb-[5px] mt-[10px]">Ski Touring</h6>
+              <div class="h font-black text-4xl mb-[5px] mt-[10px]">+</div>
+            </div>
+            <hr>
+            <div class="train flex flex-row justify-between">
+              <h6 class="text-xl font-Manrope mb-[5px] mt-[10px]">Booking</h6>
+              <div class="h font-black text-4xl mb-[5px] mt-[10px]">+</div>
+            </div>
+            <hr>
+            <div class="train flex flex-row justify-between">
+              <h6 class="text-xl font-Manrope mb-[5px] mt-[10px]">Pricings</h6>
+              <div class="h font-black text-4xl mb-[5px] mt-[10px]">+</div>
+            </div>
+            <hr>
+            </div>
+    </div>
+    <div class="program w-2/3 justify-center mx-[auto] mb-[50px] lg:mb-[100px]">
+      <h3 class="font-bold text-2xl lg:text-4xl p-3 lg:p-10 w-full text-center justify-center mt-[50px] mx-[auto]">Get In Touch</h3>
+      <p class="font-light text-sm lg:text-base w-full text-center mt-[10px] mx-[auto] "> you contact them by writing to them or phoning them. If you are, keep, or stay in touch with them, you write, phone, or visit each other regularly.</p>
+    </div>
+    <div class="containert w-5/6 justify-center mx-[auto] mb-[50px] lg:mb-[100px] border lg:rounded-xl align-text-top bg-social-icons">
+      <h4 class="align-middle my-[auto] font-bold text-xl lg:text-2xl p-3 lg:p-10 w-full text-center justify-center mt-[50px] mx-[auto]">Social Media</h4>
+      <div class="social flex flex-row justify-center mx-[auto] object-center pb-[80px] gap-4">
+        <img src="Images/twitter-logo-24.png" alt="">
+        <img src="Images/facebook-logo-24.png" alt="">
+        <img src="Images/instagram-logo-24.png" alt="">
+        <img src="Images/github-logo-24.png" alt="">
+      </div>
+      
+    </div>
     </main>
-    <footer>
+    <footer class="w-full text-footer-text justify-center mx-[auto] bg-footer-back py-[100px]">
+      <div class="footer-status flex flex-col lg:flex-row justify-around">
+        <div class="touch space-y-4">
+         <h4>Get In Touch</h4> 
+         <p class="">44, Big Building Roosevelt Street
+          Beach Gardens Florida 33410</p>
+          <div class="footer-icon1 flex flex-row gap-4">
+            
+            <i class="fa-solid fa-phone"></i>
+            <p>(+62) 123-321-543</p>
+          </div>
+          <div class="footer-icon2 flex flex-row gap-4">
+            <i class="fa-regular fa-envelope"></i>
+            <p>hockeys@support.com</p>
+            
+          </div>
+        </div>
+        <div class="company space-y-4">
+          <p>Company</p>
+          <p>About us</p>
+          <p>Leadership</p>
+          <p>Careers</p>
+          <p>News & Article</p>
+          <p>Legal Notice</p>
+        </div>
+        <div class="support space-y-4">
+          <p>Support</p>
+          <p>Help Center</p>
+          <p>FAQ</p>
+          <p>Ticket Support</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="services space-y-4">
 
+          <p>Services</p>
+          <p>Academy</p>
+          <p>Group Lesson</p>
+          <p>Private Lesson</p>
+          <p>Hockeys for kids</p>
+          <p>Hockeys for Adult</p>
+        </div>
+      </div>
+    </div>
     </footer>
 </body>
 </html>

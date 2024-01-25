@@ -1,0 +1,41 @@
+.home{
+    color: #ff0000;
+
+}
+.search{
+    width: 0.5px;
+    height: 0.5px;
+}
+.btn{
+    background: #ff0000;
+    
+}
+.font{
+    font-family: 'Manrope', sans-serif;
+}
+.club{
+    color: #131318;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 36px;
+    font-weight: 800;
+    margin-top: 80px;
+}
+.program{
+    color: #131318;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 36px;
+    font-weight: 800;
+    
+}
+/* .club-progress{
+    color: #131318;
+    text-align: center;
+    font-family: Manrope;
+    /* font-size: 36px;
+    font-weight: 800; */
+} */
+.btn{
+    background: #FF4240;
+}
